@@ -1,16 +1,66 @@
-## Hi there 👋
+# Network Fundamentals for Cybersecurity
 
-<!--
-**borhanuddineee/borhanuddineee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Overview
+This repository documents my learning of core networking fundamentals through hands-on
+TryHackMe labs. The goal is to understand how networks actually function at a technical level
+and why strong fundamentals are essential in cybersecurity.
 
-Here are some ideas to get you started:
+Rather than memorizing tools or commands, this work focuses on how data moves through
+networks, where failures occur, and how those failures impact security and reliability.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Why Networking Matters in Cybersecurity
+Most security tools depend on correct network behavior.
+If Layer 2 or Layer 3 communication is misunderstood or misconfigured, visibility is lost
+and security controls become ineffective.
+
+Understanding networking helps with:
+- Traffic analysis and monitoring
+- Incident investigation
+- Network segmentation and trust boundaries
+- Identifying misconfigurations and attack paths
+
+---
+
+## What I Learned
+
+### Local Area Networks (LANs)
+A LAN is a group of devices communicating directly at Layer 2 using MAC addresses.
+Switches forward frames based on MAC address tables, not IP addresses.
+
+If communication fails at this level, higher layers cannot compensate.
+
+### Frames vs Packets
+Frames operate at Layer 2 and use MAC addresses.
+Packets operate at Layer 3 and use IP addresses.
+
+Frames are rebuilt at every hop, while packets persist end-to-end.
+Understanding this distinction prevents incorrect assumptions about traffic flow.
+
+### Layered Networking (OSI Model)
+Networks are built using layers, each with a specific responsibility.
+Failures at lower layers cascade upward and often appear as “complex” problems.
+
+Strong fundamentals reduce troubleshooting time and prevent common mistakes.
+
+### Extending a Network
+When a network grows beyond a single LAN, routing, segmentation, and trust boundaries
+become necessary.
+
+Larger networks increase complexity and attack surface, making intentional design critical.
+
+## Tools & Platform
+- TryHackMe
+- OSI Model
+- TCP/IP Networking Concepts
+
+## Learning Approach
+- Hands-on labs
+- Concept-focused understanding
+- Emphasis on real-world behavior
+- Focus on security impact, not just connectivity
+
+## Next Steps
+- Subnetting and IP addressing
+- VLANs and network segmentation
+- Firewalls and access control
+- Network traffic analysis
